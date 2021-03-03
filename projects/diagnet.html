@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>~Yi Wen~diagnet</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="diagnet.html#">Yi Wen</a></h1>
+					<p>Passionate for Machine Learning</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html#one"><i class="fa fa-laptop"></i></a></li>
+						<li><a href="../index.html#two">Education</a></li>
+						<li><a href="../index.html#three">Portfolio</a></li>
+						<li><a href="../index.html#four">Experience</a></li>
+						<li><a href="../index.html#five">Misc</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto: wyi@stanford.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+						<li><a href="https://github.com/w-yi" class="icon fa-github"><span class="label">Github</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/wyi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+						<li><a href="https://twitter.com/_wyi_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+
+						<li><a href="https://www.facebook.com/chelsyyywww" class="icon fa-facebook"><span class="label">Facebook</span></a></li>	
+
+						<li><a href="https://www.instagram.com/chelsyyywww/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+							
+								<div class="container">
+									<header class="major"> 
+										<h2>DiagNet</h2>
+										<h5>[<a href="diagnet/poster.pdf" target="_blank">poster</a>] [<a href="diagnet/report.pdf" target="_blank">report</a>] [<a href="https://github.com/w-yi/DiagNet" target="_blank">code</a>]</h5>
+										<h5>Course Project at UM (Jan. - May 2019): Mark Jin Shengyi Qian Xiaoyang Shen Yi Wen Xinyi Zheng</h5>
+										<h5> EECS 498-12: Deep Learning, Instructed by: <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a></h5>
+									</header>
+
+									<p>	Visual Question Answering (VQA) is to answer open-ended natural language questions related to images. Modern VQA tasks require reading and reasoning of both images and texts. We propose DiagNet, an attention-based neural network model that can effectively combine multiple evidence of texts, images and texts in images. Within DiagNet, a novel multi-task training strategy is used to combine answer type evidence in a hybrid fusion. We conduct comprehensive evaluation on multiple VQA tasks, and achieve competitive results.
+									</p>
+									
+									<h3>Contribution</h3>
+									<ul>
+										<li>We propose a new neural architecture called DiagNet, that has the ability to read text in images and answer questions by reasoning over the text, objects, and questions.</li>
+										<li>We propose a novel multi-task training strategy combining answer type evidence in a hybrid fusion.</li>
+										<li>We conduct comprehensive evaluation on multiple VQA tasks, and achieve competitive results. </li>
+									</ul>
+
+									<h3>Architecture</h3>
+									<p> The neural network consists of three branches. The first row corresponds to the image object branch. The second row is the question branch. The third line is the OCR token branch.</p>
+									<img src="arch.png"/ style="width:100%;"></p>
+
+									
+									</p>
+
+									<h3>Experimental Results (find details in <a href="diagnet/report.pdf">report</a>)</h3>
+									<p> Ablation Study on TextVQA v0.5 dataset</p>
+									<table>
+									  <tr>
+									    <th>Model</th>
+									    <th>Accuracy</th> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet w/o BUTD & OCR</td>
+									    <td>11.42</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet w/o OCR</td>
+									    <td>11.25</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet-late</td>
+									    <td>15.34</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet-binary</td>
+									    <td>15.86</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet w/o BUTD</td>
+									    <td>18.22</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet-OCR</td>
+									    <td>18.44</td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet</td>
+									    <td>18.77</td> 
+									  </tr>
+									</table>
+
+									<p> Performance (in %) on TextVQA v0.5 dataset</p>
+									<table>
+									  <tr>
+									    <th>Model</th>
+									    <th>Accuracy</th> 
+									  </tr>
+									  <tr>
+									    <td><a href="https://arxiv.org/abs/1904.08920">Pythia</a></td>
+									    <td><a href="https://arxiv.org/abs/1904.08920">13.04</a></td> 
+									  </tr>
+									  <tr>
+									    <td>DiagNet</td>
+									    <td>18.77</td> 
+									  </tr>
+									  <tr>
+									    <td><a href="https://arxiv.org/abs/1904.08920">LoRRA+Pythia</a></td>
+									    <td><a href="https://arxiv.org/abs/1904.08920">26.56</a></td> 
+									  </tr>
+									</table>
+
+								
+
+								<h3>Error Examples</h3>
+
+									<img src="error1.png"/ style="display: block;width:100%;margin-left: auto;margin-right: auto;"></p>
+									<img src="error2.png"/ style="display: block;width:100%;margin-left: auto;margin-right: auto;"></p>
+									<img src="error3.png"/ style="display: block;width:100%;margin-left: auto;margin-right: auto;"></p>
+							
+						</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Yi Wen. All rights reserved.</li><li> <i class="fa fa-heart-o"></i></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/browser.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/breakpoints.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/util.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/main.js"></script>
+
+	</body>
+</html>
