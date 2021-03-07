@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>~Yi Wen~voronoi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="voronoi.html#">Yi Wen</a></h1>
+					<p>Passionate for Machine Learning</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html#one"><i class="fa fa-laptop"></i></a></li>
+						<li><a href="../index.html#two">Education</a></li>
+						<li><a href="../index.html#three">Portfolio</a></li>
+						<li><a href="../index.html#four">Experience</a></li>
+						<li><a href="../index.html#five">Misc</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto: wyi@stanford.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+						<li><a href="https://github.com/w-yi" class="icon fa-github"><span class="label">Github</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/wyi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+						<li><a href="https://twitter.com/_wyi_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+
+						<li><a href="https://www.facebook.com/chelsyyywww" class="icon fa-facebook"><span class="label">Facebook</span></a></li>	
+
+						<li><a href="https://www.instagram.com/chelsyyywww/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+							
+								<div class="container">
+									<header class="major"> 
+										<h2>Segmentation of Polycrystalline Images Using Voronoi Diagrams</h2>
+										<h5>[<a href="https://w-yi.github.io/projects/voronoi/projects/voronoi/presentation.pdf" target="_blank">pre</a>] [<a href="https://www.youtube.com/watch?v=qxzk159Qytc" target="_blank">demo</a>]</h5>
+										<h5>Uzziel Cortez, Yi Wen. <br> Mentored by: Selim Esedoglu, Tiago Salvador. <br> Founded by: Rackham Graduate School, UM. </h5>
+									</header>
+
+									<p>Material development is essential to solving problems our world faces. Polycrystalline materials are composed of many crystalline parts that are randomly oriented with respect to each other. The material's properties are largely dependent on its microstructure. Determining a materials properties through analysis of grain boundary structure is crucial to the development of new materials and subsequent advancement of engineering. Obtaining accurate measurements through imaging can be expensive and tedious.
+
+										Given an image of a polycrystalline material, we would like to implement an algorithm that will produce an accurate segmentation, i.e. to produce a binary image that accurately represents the grain boundary structure. 
+
+									<img src="inout.png"/ style="display: block;width:70%;margin-left: auto;margin-right: auto;">
+									</p>
+									
+									<h3>Basic Idea</h3>
+									<ul>
+										<li>Voronoi Diagramst are used to approximate the boundary. </li>
+										<li>An energy function is defined to constrain the boundary length and the difference of segmentation. </li>
+										<li>The gradients of the energy function are formulated. </li>
+										<li>Gradient descent. </li> 
+									</ul>
+
+									<h3>Interesting Topological Events</h3>
+									<ul>
+										<li>Vertex collisions </li>
+										<li>Center collisions </li>
+										<li>Vertices escape the boundary </li>
+										<li>Center regions collapsed </li> 
+									</ul>
+
+									<h3>Demo</h3>
+
+										<iframe width="420" height="315"
+											src="https://www.youtube.com/embed/qxzk159Qytc">
+										</iframe></p>
+
+
+
+
+								</div>
+							
+						
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Yi Wen. All rights reserved.</li><li> <i class="fa fa-heart-o"></i></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/browser.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/breakpoints.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/util.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/main.js"></script>
+
+	</body>
+</html>

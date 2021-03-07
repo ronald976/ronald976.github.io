@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>~Yi Wen~makeup-go</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="makeupgo.html#">Yi Wen</a></h1>
+					<p>Passionate for Machine Learning</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html#one"><i class="fa fa-laptop"></i></a></li>
+						<li><a href="../index.html#two">Education</a></li>
+						<li><a href="../index.html#three">Portfolio</a></li>
+						<li><a href="../index.html#four">Experience</a></li>
+						<li><a href="../index.html#five">Misc</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto: wyi@stanford.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+						<li><a href="https://github.com/w-yi" class="icon fa-github"><span class="label">Github</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/wyi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+						<li><a href="https://twitter.com/_wyi_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+
+						<li><a href="https://www.facebook.com/chelsyyywww" class="icon fa-facebook"><span class="label">Facebook</span></a></li>	
+
+						<li><a href="https://www.instagram.com/chelsyyywww/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+							
+								<div class="container">
+									<header class="major"> 
+										<h2>Makeup-Go</h2>
+										<h5>[<a href="makeupgo/poster.pdf" target="_blank">poster</a>] [<a href="makeupgo/report.pdf" target="_blank">report</a>] [<a href="https://github.com/w-yi/makeup-go" target="_blank">code</a>]</h5>
+										<h5>Course project at UM (Nov. - Dec. 2018): Mark Jin, Yi Wen, Yehu Chen, Zixuan Li, Haoxiang Wu</h5>
+										<h5> EECS 442: Computer Vision, Instructed by: <a href="http://web.eecs.umich.edu/~jjcorso/">Jason Corso</a></h5>
+									</header>
+
+									<p>Advance of image processing APPs gives rise to an overwhelming trend of artiﬁcial beautiﬁcation. Our project aims to reverse the portrait beautiﬁcation despite lack of information of the exact process applied. To precisely capture the subtle features of facial images, we apply Principle Component Analysis to the residual images of the original and beautiﬁed images, and then train several independent convolutional neural networks to regress each normalized components, and finally restore the original faces.</p>
+									
+									<h3>Dataset</h3>
+									<p>We  used  the  web  crawler  and  portraitbeautifying APPs to build our own dataset. 
+									<img src="dataset.png"/ style="display: block;width:70%;margin-left: auto;margin-right: auto;"></p>
+
+									<h3>Architecture</h3>
+									<p>We re-constructed and improved the Component Regression Network proposed in <a href="https://ieeexplore.ieee.org/document/8237744">this paper</a>.</br>
+									Generally, we regressed the residual image between the beautified one and the original one in the scaled-component space. 
+									<img src="model.png"/ style="width:100%;"></p>
+
+									
+									</p>
+
+									<h3>Result</h3>
+									<img src="result.png"/ style="display: block;width:70%;margin-left: auto;margin-right: auto;"></p>
+
+									<h3>Related work</h3>
+									<ul>
+										<li><a href="https://ieeexplore.ieee.org/document/8237744">Chen, Ying-Cong, Xiaoyong Shen, and Jiaya Jia. Makeup-go: Blind reversion of portrait edit. In <i>IEEE </i>, 2017.</a></li>
+									</ul>
+
+
+								</div>
+							
+						
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Yi Wen. All rights reserved.</li><li> <i class="fa fa-heart-o"></i></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/browser.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/breakpoints.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/util.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/main.js"></script>
+
+	</body>
+</html>

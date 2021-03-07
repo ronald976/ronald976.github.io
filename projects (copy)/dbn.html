@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>~Yi Wen~fast-dbn</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="dbn.html#">Yi Wen</a></h1>
+					<p>Passionate for Machine Learning</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html#one"><i class="fa fa-laptop"></i></a></li>
+						<li><a href="../index.html#two">Education</a></li>
+						<li><a href="../index.html#three">Portfolio</a></li>
+						<li><a href="../index.html#four">Experience</a></li>
+						<li><a href="../index.html#five">Misc</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto: wyi@stanford.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+						<li><a href="https://github.com/w-yi" class="icon fa-github"><span class="label">Github</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/wyi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+						<li><a href="https://twitter.com/_wyi_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+
+						<li><a href="https://www.facebook.com/chelsyyywww" class="icon fa-facebook"><span class="label">Facebook</span></a></li>	
+
+						<li><a href="https://www.instagram.com/chelsyyywww/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+							
+								<div class="container">
+									<header class="major">
+										<h2>Fast Decorrelated Batch Normalization</h2>
+										<h5>2018 Summer Research at former Michigan Vision & Learning Lab (currently <a href="http://pvl.cs.princeton.edu/"> Princeton VL Lab</a>)</h5>
+										<h5> Founded by <a href="https://sure.engin.umich.edu/">Summer Undergraduate Research in Engineering program</a> </h5>
+										<h5> Advised by: Jia Deng; Monitored by: Dawei Yang</h5>
+									</header>
+
+									<p>Batch Normalization (BN) is able to accelerate the training of deep neural networks and improve the accuracy of trained models by normalizing inputs for any layer within mini-batches. Decorrelated Batch Normalization (DBN) is a technique which maintains the general benefits of BN and further improves some abilities of BN by not only normalizing the layer inputs but ZCA-whitening them as well. However, the algorithm of ZCA-whitening depends heavily on a matrix decomposition that runs slowly on GPU for lack of an efficient parallel routine. In this work, Fast Decorrelated Batch Normalization (Fast-DBN) speeds up DBN and retains its desirable qualities. We employ some approximation in matrix computation, which can faster whiten the layer inputs in neural networks. We implement Fast-DBN based on the PyTorch platform and write custom C++ extensions. We reproduce the experiments previously comparing BN and DBN on multilayer perceptrons and convolutional neural networks to show that Fast-DBN can produce comparable results as DBN and accelerate the training and the inference of the neural networks. </p>
+
+
+									
+									<h3>Related work</h3>
+									<ul>
+										<li><a href="https://arxiv.org/abs/1804.08450">Lei Huang, Dawei Yang, Bo Lang, and Jia Deng. Decorrelated batch normalization. In <i>CVPR</i>, 2018.</a></li>
+									</ul>
+
+
+
+
+								</div>
+							
+						
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Yi Wen. All rights reserved.</li><li> <i class="fa fa-heart-o"></i></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/browser.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/breakpoints.min.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/util.js"></script>
+			<script src="https://w-yi.github.io/projects/assets/js/main.js"></script>
+
+	</body>
+</html>
